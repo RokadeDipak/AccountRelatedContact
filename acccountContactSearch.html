@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-16-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Account Search" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <lightning-helptext content="Type the name of Account in Select Account then Select the account from Select Account"></lightning-helptext> 
+            <lightning-input type="search" placeholder="Search Account" label="Search Account" onchange={handleSearch} value={searchTerm}></lightning-input>
+            <br />
+               <b> <lightning-combobox label="Select Account" value={searchTerm} options={searchResults} onchange={handleSearch}></lightning-combobox> </b>
+        </div>
+
+    </lightning-card>
+</template>
