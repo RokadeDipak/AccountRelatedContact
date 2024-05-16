@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-16-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Contact which is associated with Selected Account">
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={contactData}
+                columns={columns}
+                hide-checkbox-column="true"
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
